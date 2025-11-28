@@ -60,41 +60,16 @@ const HeroSection: React.FC = () => {
           >
             <div className="relative w-full max-w-md">
               <div className="relative w-full max-w-md mx-auto bg-black rounded-lg overflow-hidden shadow-2xl border border-sky-500/30">
-                <div 
-                  style={{position:"relative", paddingTop:"177.77777777777777%"}}
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      <iframe 
-                        id="panda-6f1e8eb4-3749-468f-a571-fabf5fdaa799" 
-                        src="https://player-vz-00f8c568-218.tv.pandavideo.com.br/embed/?v=6f1e8eb4-3749-468f-a571-fabf5fdaa799" 
-                        style="border:none;position:absolute;top:0;left:0;" 
-                        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                        allowfullscreen="true" 
-                        width="100%" 
-                        height="100%" 
-                        fetchpriority="high">
-                      </iframe>
-                      <script>
-                        if(!document.querySelector('script[src="https://player.pandavideo.com.br/api.v2.js"]')){
-                          let s=document.createElement('script');
-                          s.src='https://player.pandavideo.com.br/api.v2.js'; 
-                          s.async=true; 
-                          document.head.appendChild(s);
-                        } 
-                        window.pandascripttag = window.pandascripttag || [];
-                        window.pandascripttag.push(function (){
-                          const panda_id_player = 'panda-6f1e8eb4-3749-468f-a571-fabf5fdaa799';
-                          const p=new PandaPlayer(panda_id_player,{
-                            onReady(){
-                              p.pipScrollFollow({panda_id_player});
-                            }
-                          });
-                        });
-                      </script>
-                    `
-                  }}
-                />
-                
+                <video
+                  className="w-full h-auto"
+                  controls
+                  preload="metadata"
+                  poster="https://gabrielovigna.com/vslsitepro-thumbnail.jpg"
+                >
+                  <source src="https://gabrielovigna.com/vslsitepro.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeos HTML5.
+                </video>
+
                 {/* Domain watermark */}
                 <div className="absolute top-4 right-4 text-white/50 text-sm font-medium pointer-events-none z-10">
                   gabrielovigna.com

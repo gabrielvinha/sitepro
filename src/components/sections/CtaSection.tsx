@@ -20,7 +20,7 @@ const CtaSection: React.FC = () => {
   ];
 
   return (
-    <section id="cta" className="py-20 relative overflow-hidden bg-gradient-to-b from-purple-900/40 to-blue-900/40" ref={ref}>
+    <section id="cta" className="py-20 relative overflow-hidden bg-gradient-to-b from-sky-900/40 to-emerald-900/40" ref={ref}>
       <div className="container mx-auto px-4 z-10 relative">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <motion.div 
@@ -34,7 +34,7 @@ const CtaSection: React.FC = () => {
               alt="Criação de sites com IA"
               className="w-full max-w-md mx-auto relative z-10"
             />
-            <div className="absolute inset-0 bg-gradient-to-tl from-purple-600/20 to-blue-400/20 rounded-full filter blur-3xl -z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-tl from-sky-500/20 to-emerald-400/20 rounded-full filter blur-3xl -z-10"></div>
           </motion.div>
           
           <motion.div 
@@ -44,7 +44,7 @@ const CtaSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              COMECE A CRIAR SITES PROFISSIONAIS <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">HOJE MESMO</span>
+              COMECE A CRIAR SITES PROFISSIONAIS <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400">HOJE MESMO</span>
             </h2>
             
             <p className="text-gray-300 mb-6">
@@ -66,7 +66,7 @@ const CtaSection: React.FC = () => {
               ))}
             </ul>
             
-            <div className="bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-purple-500/30 mb-8">
+            <div className="bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-sky-500/30 mb-8">
               <div className="flex items-center gap-4 mb-4">
                 <img 
                   src="https://i.ibb.co/xtpq7bFp/B50-C9-DEE-097-B-4071-A544-5-F2-F86-CF8-FC5-1.png" 
@@ -85,7 +85,7 @@ const CtaSection: React.FC = () => {
               
               <a 
                 href="#pricing"
-                className="inline-block w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-bold rounded-md 
+                className="inline-block w-full bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white font-bold rounded-md 
                 transition-all duration-300 uppercase tracking-wide 
                 hover:shadow-glow hover:scale-105 
                 animate-pulse-slow 
@@ -103,7 +103,7 @@ const CtaSection: React.FC = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-60 h-60 bg-purple-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/4 left-10 w-60 h-60 bg-sky-500/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-1/3 right-10 w-60 h-60 bg-blue-600/10 rounded-full filter blur-3xl"></div>
     </section>
   );

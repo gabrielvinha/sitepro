@@ -72,7 +72,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
 
 const TimeBox: React.FC<{ value: string }> = ({ value }) => {
   return (
-    <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-b from-purple-900 to-purple-800 rounded-md text-white text-xl font-bold">
+    <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-b from-sky-900 to-purple-800 rounded-md text-white text-xl font-bold">
       {value}
     </div>
   );

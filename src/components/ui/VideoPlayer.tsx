@@ -71,7 +71,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, domain }) => {
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-800">
         <motion.div
           ref={progressBarRef}
-          className="h-full bg-gradient-to-r from-purple-600 to-blue-400"
+          className="h-full bg-gradient-to-r from-sky-500 to-emerald-400"
           style={{ width: `${progress}%` }}
           transition={{
             duration: 0.5,

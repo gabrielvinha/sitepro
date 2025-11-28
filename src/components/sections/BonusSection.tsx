@@ -79,16 +79,16 @@ const BonusSection: React.FC = () => {
               variants={item}
               whileHover={{ y: -5 }}
             >
-              <div className="h-2 bg-gradient-to-r from-purple-600 to-blue-500"></div>
+              <div className="h-2 bg-gradient-to-r from-sky-500 to-cyan-500"></div>
               <div className="p-6">
                 <div className="mb-3 flex items-center justify-between">
-                  <div className="px-3 py-1 bg-purple-500/20 rounded-full text-purple-400 text-xs font-medium">
+                  <div className="px-3 py-1 bg-sky-500/20 rounded-full text-sky-400 text-xs font-medium">
                     BÔNUS #{bonus.id}
                   </div>
                   <Gift className="h-5 w-5 text-blue-400" />
                 </div>
                 
-                <h3 className="text-white text-lg font-semibold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all">
+                <h3 className="text-white text-lg font-semibold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-sky-400 group-hover:to-emerald-400 transition-all">
                   {bonus.title}
                 </h3>
                 
@@ -111,7 +111,7 @@ const BonusSection: React.FC = () => {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.6 }}
         >
-          <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-2">
+          <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-2">
             Valor Total dos Bônus: R$738
           </p>
           <p className="text-white">
@@ -121,7 +121,7 @@ const BonusSection: React.FC = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-40 h-40 bg-purple-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/4 left-10 w-40 h-40 bg-sky-500/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-1/3 right-10 w-40 h-40 bg-blue-600/10 rounded-full filter blur-3xl"></div>
     </section>
   );

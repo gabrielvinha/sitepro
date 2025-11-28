@@ -63,7 +63,7 @@ const ObjectionsSection: React.FC = () => {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className={`w-full text-left p-6 rounded-lg flex items-start gap-4 transition-all duration-300 ${
                   openIndex === index
-                    ? 'bg-gradient-to-r from-purple-900/40 to-blue-900/40 border border-purple-500/30'
+                    ? 'bg-gradient-to-r from-sky-900/40 to-emerald-900/40 border border-sky-500/30'
                     : 'bg-gray-900/60 hover:bg-gray-900/80'
                 }`}
               >
@@ -74,9 +74,9 @@ const ObjectionsSection: React.FC = () => {
                   <div className="flex justify-between items-center">
                     <h3 className="text-white text-lg font-medium pr-8">{objection.question}</h3>
                     {openIndex === index ? (
-                      <ChevronUp className="w-5 h-5 text-purple-400 shrink-0" />
+                      <ChevronUp className="w-5 h-5 text-sky-400 shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-purple-400 shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-sky-400 shrink-0" />
                     )}
                   </div>
                   {openIndex === index && (
@@ -104,7 +104,7 @@ const ObjectionsSection: React.FC = () => {
         >
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-glow transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-glow transition-all duration-300 hover:scale-105"
           >
             AGORA NÃO TEM MAIS DESCULPA
           </a>
@@ -112,7 +112,7 @@ const ObjectionsSection: React.FC = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-40 h-40 bg-purple-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/4 left-10 w-40 h-40 bg-sky-500/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-1/3 right-10 w-40 h-40 bg-blue-600/10 rounded-full filter blur-3xl"></div>
     </section>
   );

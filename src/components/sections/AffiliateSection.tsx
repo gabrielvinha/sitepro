@@ -42,7 +42,7 @@ const AffiliateSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-emerald-400">
             Transforme ideias em lucros com velocidade nunca vista
           </h2>
           <p className="text-xl text-gray-300">
@@ -59,7 +59,7 @@ const AffiliateSection: React.FC = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b from-purple-900/30 to-blue-900/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20 hover:border-blue-400/40 transition-all group"
+              className="bg-gradient-to-b from-sky-900/30 to-emerald-900/30 backdrop-blur-sm rounded-lg p-6 border border-sky-500/20 hover:border-blue-400/40 transition-all group"
             >
               <div className="flex items-start gap-4">
                 <div className="text-gradient-purple-blue p-3 bg-gray-800/50 rounded-full group-hover:bg-gray-700/50 transition-colors">

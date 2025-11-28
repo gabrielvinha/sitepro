@@ -49,7 +49,7 @@ const ComparisonSection: React.FC = () => {
               playsInline
               controls={false}
             />
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-lg blur-md -z-10"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-sky-500/20 to-cyan-500/20 rounded-lg blur-md -z-10"></div>
           </div>
         </motion.div>
         
@@ -80,7 +80,7 @@ const ComparisonSection: React.FC = () => {
           
           {/* Our Method */}
           <motion.div 
-            className="bg-gradient-to-b from-purple-900/40 to-blue-900/40 rounded-lg p-6 border border-blue-500/30"
+            className="bg-gradient-to-b from-sky-900/40 to-emerald-900/40 rounded-lg p-6 border border-emerald-500/30"
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}

@@ -56,7 +56,7 @@ const WhatsAppSection: React.FC = () => {
             {benefits.map((benefit, index) => (
               <div 
                 key={index}
-                className="bg-gradient-to-b from-purple-900/30 to-blue-900/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20"
+                className="bg-gradient-to-b from-sky-900/30 to-emerald-900/30 backdrop-blur-sm rounded-lg p-6 border border-sky-500/20"
               >
                 <div className="text-gradient-purple-blue mb-4">
                   {benefit.icon}

@@ -48,14 +48,22 @@ const BenefitsSection: React.FC = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.08,
+        delayChildren: 0.1
       }
     }
   };
-  
+
   const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    hidden: { opacity: 0, y: 30 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.4, 0, 0.2, 1]
+      }
+    }
   };
 
   return (
@@ -75,11 +83,11 @@ const BenefitsSection: React.FC = () => {
           {benefits.map((benefit, index) => (
             <motion.div 
               key={index}
-              className="bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20 hover:border-blue-400/40 transition-colors group hover:shadow-glow-sm"
+              className="bg-gray-900/60 backdrop-blur-sm rounded-xl p-6 border border-sky-500/20 hover:border-emerald-400/50 transition-all duration-300 group hover:shadow-glow"
               variants={item}
               whileHover={{ y: -5 }}
             >
-              <div className="mb-4 text-gradient-purple-blue p-3 bg-gray-800/50 rounded-full w-14 h-14 flex items-center justify-center group-hover:bg-gray-700/50 transition-colors">
+              <div className="mb-4 text-sky-400 p-3 bg-gradient-to-br from-sky-500/10 to-emerald-500/10 rounded-xl w-14 h-14 flex items-center justify-center group-hover:from-sky-500/20 group-hover:to-emerald-500/20 transition-all duration-300">
                 {benefit.icon}
               </div>
               <h3 className="text-white text-xl font-semibold mb-2">{benefit.title}</h3>
@@ -90,8 +98,8 @@ const BenefitsSection: React.FC = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-60 h-60 bg-purple-600/10 rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-1/3 right-20 w-40 h-40 bg-blue-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/4 left-10 w-60 h-60 bg-sky-500/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-1/3 right-20 w-40 h-40 bg-emerald-500/10 rounded-full filter blur-3xl"></div>
     </section>
   );
 };

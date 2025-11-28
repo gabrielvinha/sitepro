@@ -50,8 +50,8 @@ const TestimonialsSection: React.FC = () => {
         <div className="max-w-5xl mx-auto relative">
           {/* Navigation Buttons */}
           <div className="absolute top-1/2 -translate-y-1/2 -left-6 z-20">
-            <motion.button 
-              className="w-14 h-14 rounded-full bg-purple-600/90 hover:bg-purple-600 flex items-center justify-center text-white transition-all duration-300 shadow-xl hover:shadow-2xl backdrop-blur-sm"
+            <motion.button
+              className="w-14 h-14 rounded-full bg-gradient-to-br from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 flex items-center justify-center text-white transition-all duration-300 shadow-xl hover:shadow-2xl backdrop-blur-sm"
               onClick={prevTestimonial}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -61,8 +61,8 @@ const TestimonialsSection: React.FC = () => {
           </div>
           
           <div className="absolute top-1/2 -translate-y-1/2 -right-6 z-20">
-            <motion.button 
-              className="w-14 h-14 rounded-full bg-purple-600/90 hover:bg-purple-600 flex items-center justify-center text-white transition-all duration-300 shadow-xl hover:shadow-2xl backdrop-blur-sm"
+            <motion.button
+              className="w-14 h-14 rounded-full bg-gradient-to-br from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 flex items-center justify-center text-white transition-all duration-300 shadow-xl hover:shadow-2xl backdrop-blur-sm"
               onClick={nextTestimonial}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -72,7 +72,7 @@ const TestimonialsSection: React.FC = () => {
           </div>
           
           {/* Video Container - Larger and More Engaging */}
-          <div className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl border-2 border-purple-500/30">
+          <div className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl border-2 border-sky-500/30">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -96,7 +96,7 @@ const TestimonialsSection: React.FC = () => {
             </AnimatePresence>
             
             {/* Glow effect */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-2xl blur-md -z-10"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-sky-500/30 to-emerald-500/30 rounded-2xl blur-md -z-10"></div>
           </div>
           
           {/* Video Title */}
@@ -118,8 +118,8 @@ const TestimonialsSection: React.FC = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-purple-500 scale-125 shadow-lg shadow-purple-500/50' 
+                  index === currentIndex
+                    ? 'bg-sky-500 scale-125 shadow-lg shadow-sky-500/50'
                     : 'bg-gray-600 hover:bg-gray-500'
                 }`}
                 aria-label={`Ver depoimento ${index + 1}`}
@@ -134,8 +134,8 @@ const TestimonialsSection: React.FC = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`relative w-24 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'border-purple-500 scale-110' 
+                  index === currentIndex
+                    ? 'border-sky-500 scale-110'
                     : 'border-gray-600 hover:border-gray-400 opacity-70 hover:opacity-100'
                 }`}
                 whileHover={{ scale: index === currentIndex ? 1.1 : 1.05 }}
@@ -158,8 +158,8 @@ const TestimonialsSection: React.FC = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-1/3 left-10 w-40 h-40 bg-purple-600/10 rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-blue-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/3 left-10 w-40 h-40 bg-sky-500/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-emerald-500/10 rounded-full filter blur-3xl"></div>
     </section>
   );
 };

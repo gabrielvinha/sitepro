@@ -63,17 +63,17 @@ const SocialProofSection: React.FC = () => {
             ))}
           </Swiper>
 
-          <button className="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-purple-600/80 hover:bg-purple-600 rounded-full text-white transition-colors">
+          <button className="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-sky-500/80 hover:bg-sky-500 rounded-full text-white transition-colors">
             <ChevronLeft size={24} />
           </button>
-          <button className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-purple-600/80 hover:bg-purple-600 rounded-full text-white transition-colors">
+          <button className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-sky-500/80 hover:bg-sky-500 rounded-full text-white transition-colors">
             <ChevronRight size={24} />
           </button>
         </motion.div>
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-40 h-40 bg-purple-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/4 left-10 w-40 h-40 bg-sky-500/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-1/3 right-10 w-40 h-40 bg-blue-600/10 rounded-full filter blur-3xl"></div>
     </section>
   );

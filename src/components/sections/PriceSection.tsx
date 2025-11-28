@@ -151,7 +151,7 @@ const PriceSection: React.FC = () => {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.6 }}
         >
-          <div className="flex items-center gap-4 bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-purple-500/30 max-w-2xl">
+          <div className="flex items-center gap-4 bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-sky-500/30 max-w-2xl">
             <img 
               src="https://i.ibb.co/xtpq7bFp/B50-C9-DEE-097-B-4071-A544-5-F2-F86-CF8-FC5-1.png" 
               alt="Garantia de 7 dias"

@@ -66,17 +66,17 @@ const FaqSection: React.FC = () => {
             >
               <button
                 className={`w-full text-left p-4 rounded-lg flex justify-between items-center ${
-                  openIndex === index 
-                    ? 'bg-gradient-to-r from-purple-900/50 to-blue-900/50 border border-purple-500/30' 
+                  openIndex === index
+                    ? 'bg-gradient-to-r from-sky-900/40 to-emerald-900/40 border border-sky-500/30'
                     : 'bg-gray-800/60 hover:bg-gray-800/80'
                 } transition-colors`}
                 onClick={() => toggleFaq(index)}
               >
                 <span className="text-white font-medium">{faq.question}</span>
                 {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5 text-purple-400 shrink-0" />
+                  <ChevronUp className="h-5 w-5 text-sky-400 shrink-0" />
                 ) : (
-                  <ChevronDown className="h-5 w-5 text-purple-400 shrink-0" />
+                  <ChevronDown className="h-5 w-5 text-sky-400 shrink-0" />
                 )}
               </button>
               
@@ -97,8 +97,8 @@ const FaqSection: React.FC = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-40 h-40 bg-purple-600/10 rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-1/3 right-10 w-40 h-40 bg-blue-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/4 left-10 w-40 h-40 bg-sky-500/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-1/3 right-10 w-40 h-40 bg-emerald-500/10 rounded-full filter blur-3xl"></div>
     </section>
   );
 };

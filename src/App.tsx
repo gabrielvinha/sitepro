@@ -6,7 +6,6 @@ import AboutSection from './components/sections/AboutSection';
 import ComparisonSection from './components/sections/ComparisonSection';
 import BenefitsSection from './components/sections/BenefitsSection';
 import TestimonialsSection from './components/sections/TestimonialsSection';
-import ProcessSection from './components/sections/ProcessSection';
 import BonusSection from './components/sections/BonusSection';
 import WhatsAppSection from './components/sections/WhatsAppSection';
 import PriceSection from './components/sections/PriceSection';

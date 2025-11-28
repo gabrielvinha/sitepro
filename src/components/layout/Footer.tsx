@@ -67,7 +67,7 @@ const SocialIcon: React.FC<{ icon: React.ReactNode }> = ({ icon }) => {
   return (
     <a 
       href="#" 
-      className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-400 hover:text-white transition-all"
+      className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-gradient-to-r hover:from-sky-500 hover:to-emerald-400 hover:text-white transition-all"
     >
       {icon}
     </a>

@@ -26,14 +26,14 @@ const MembersAreaSection: React.FC = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl border border-purple-500/30">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl border border-sky-500/30">
               <img 
                 src="https://i.postimg.cc/jjyQqbh1/image.png"
                 alt="Área de membros exclusiva"
                 className="w-full h-auto"
                 loading="lazy"
               />
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-lg blur-md -z-10"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-sky-500/20 to-cyan-500/20 rounded-lg blur-md -z-10"></div>
             </div>
             
             <div className="mt-4 text-center">
@@ -56,7 +56,7 @@ const MembersAreaSection: React.FC = () => {
                 className="w-full h-auto"
                 loading="lazy"
               />
-              <div className="absolute -inset-1 bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-lg blur-md -z-10"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-500/20 to-cyan-500/20 rounded-lg blur-md -z-10"></div>
             </div>
             
             <div className="mt-4 text-center">
@@ -73,9 +73,9 @@ const MembersAreaSection: React.FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <div className="bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20 text-center">
-            <div className="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center mx-auto mb-4">
-              <Play className="w-6 h-6 text-purple-400" />
+          <div className="bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-sky-500/20 text-center">
+            <div className="w-12 h-12 rounded-full bg-sky-500/20 flex items-center justify-center mx-auto mb-4">
+              <Play className="w-6 h-6 text-sky-400" />
             </div>
             <h4 className="text-white font-semibold mb-2">Aulas Práticas</h4>
             <p className="text-gray-400 text-sm">Conteúdo direto ao ponto sem enrolação</p>
@@ -89,7 +89,7 @@ const MembersAreaSection: React.FC = () => {
             <p className="text-gray-400 text-sm">Tire dúvidas diretamente comigo</p>
           </div>
 
-          <div className="bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20 text-center">
+          <div className="bg-gray-900/60 backdrop-blur-sm rounded-lg p-6 border border-emerald-500/20 text-center">
             <div className="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center mx-auto mb-4">
               <Award className="w-6 h-6 text-blue-400" />
             </div>
@@ -100,7 +100,7 @@ const MembersAreaSection: React.FC = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-40 h-40 bg-purple-600/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-1/4 left-10 w-40 h-40 bg-sky-500/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-1/3 right-10 w-40 h-40 bg-green-600/10 rounded-full filter blur-3xl"></div>
     </section>
   );

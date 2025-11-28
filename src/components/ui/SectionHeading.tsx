@@ -14,8 +14,8 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <motion.h2 
-      className={`text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-400 mb-8 
-      ${centered ? 'text-center' : ''} 
+      className={`text-3xl md:text-4xl font-bold text-gradient mb-8
+      ${centered ? 'text-center' : ''}
       ${className}`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

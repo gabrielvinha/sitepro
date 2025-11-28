@@ -25,11 +25,11 @@ const GlowButton: React.FC<GlowButtonProps> = ({
 
   const buttonContent = (
     <motion.span
-      className={`inline-block bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-bold rounded-md 
-      transition-all duration-300 uppercase tracking-wide 
-      hover:shadow-glow hover:scale-105 
-      ${pulse ? 'animate-pulse-slow' : ''} 
-      ${sizeClasses[size]} 
+      className={`inline-block bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-bold rounded-lg
+      transition-all duration-300 uppercase tracking-wide
+      hover:shadow-glow hover:scale-105
+      ${pulse ? 'animate-pulse-slow' : ''}
+      ${sizeClasses[size]}
       ${className}`}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
